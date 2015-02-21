@@ -1,1 +1,5 @@
-Flask Task Manager part 2 - With SQLAlchemy and User Management
+Flask Task Manager part 2 
+
+SQLAlchemy
+
+User Management

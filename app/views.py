@@ -33,7 +33,7 @@ def login_required(test):
 def logout():
     session.pop('logged_in', None)
     session.pop('user_id', None)
-    flash('You are logged out. Bye. :(')
+    flash('You are logged out.')
     return redirect(url_for('login'))
 
 
@@ -58,7 +58,7 @@ def login():
             else:
                 session['logged_in'] = True
                 session['user_id'] = u.id
-                flash('You are logged in. Go Crazy.')
+                flash('You are logged in.')
                 return redirect(url_for('tasks'))
         else:
             return render_template(
